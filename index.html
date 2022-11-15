@@ -1,82 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>University Website Design</title>
-	<link rel = "stylesheet" href = "Website.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@700&family=Staatliches&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>University Website Design</title>
+  <link rel = "stylesheet" href = "Website.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@700&family=Staatliches&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<section class = "header">
-		<nav> 
-			<div class = "nav-links" id = "navLinks">
-				
-				<ul>
-					<li><a href ="index.html">НҮҮР</a></li>
-					<li><a href ="about.html">ТУХАЙ</a></li>
-					<li><a href="service.html">ҮЙЛЧИЛГЭЭ</a></li>
-					<li><a href="artist.html">АРТИСТ</a></li>
-					<li><a href="time.html">ЦАГ АВАХ</a></li>
-				</ul>
-			</div>
-	
-		</nav>
-<div class="text-box">
-	<img src="Магги.jpg">
-	<h1>Магги</h1>
-	<p>М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.</p>
-	<a href="" class="hero-btn">Утас</a>
-		<a href="" class="hero-btn">Instagram</a>
-	<div> <img src="m.1.png">  
-		  <img src="m.2.png"> 
-		  <img src="m.3.png">
-		   </div>
+  <header class = "header">
+    <nav> 
+      <a href= "index.html"><p>TWINKLEE</p></a>
+      <div class = "nav-links" id = "navLinks">
+        <i class ="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href ="index.html">НҮҮР</a></li>
+          <li><a href ="about.html">ТУХАЙ</a></li>
+          <li><a href="service.html">ҮЙЛЧИЛГЭЭ</a></li>
+          <li><a href="artist.html">АРТИСТ</a></li>
+          <li><a href="time.html">ЦАГ АВАХ</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()">
+    </nav>
+</header>
+<section class="course">
+  <div class="column">
+    <div class="course-col">
+      <img src="ziko.jpg" alt="Trend budalt">
+    </div>
+    <div class="course-col">
+      <div>
+        <img src="hums.jpg">
+        <p><h5>Маникюр</h5></p>
+      </div>
+      <div>
+        <img src="olll.jpg">
+        <p><h5>Педикюр</h5></p>
+      </div>
+      <div>
+        <img src="ppppp.jfif">
+        <p><h5>Багц үйлчилгээ</h5></p>
+      </div>
+      <div>
+        <img src="okkkk.png">
+        <p><h5>Зөвлөгөө</h5></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="course1">
+  <div class="row">
+    <div class="course-col">
+      <h3>Чанартай үйлчилгээ</h3>
+       <h3>Чадварлаг хамт олон</h3>
+    </div>
+    <div>
+      <a href="" class="hero-btn">Тухай</a>
+      <p>“Twinklee ” салон нь тухлаг орчин таатай нөхцөлийг ханган чадварлаг артист болон найрсаг хамт олноор таныг угтан авах болно.</p>
+    </div>
+  </section
+<!---Facilities -->
+<section class="facilities">
+  <h1>Хамт олон</h1>
+  <p>10 жилийн туршлага бүхий найрсаг хамт олон таныг угтан авна.</p>
+  <div class="row">
+  <div class="facilities-col">  
+    <img src="bella.jpg">
+    <h3>Белла Артист</h3>
+    <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+    Pellentesque aliquet turpis nulla.</p>
+  </div>
+  <div class="facilities-col">  
+    <img src="erkhes.jpg">
+    <h3>Largest Play Ground</h3>
+    <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+    Pellentesque aliquet turpis nulla.</p>
+  </div>
+  <div class="facilities-col">  
+    <img src="maggi.jpg">
+    <h3>Tasty and Healthy Food</h3>
+    <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+    Pellentesque aliquet turpis nulla.</p>
+  </div>
 </div>
-<div class="text-box">
-	<img src="Эрхэс.jpg">
-	<h1>Эрхэс</h1>
-	<p>Nails сэтгүүлийн шилдэг 25 жагсаалтад олон удаа орсон эрэгтэй маникюрчин гэдгээрээ алдартай. 2020 онд Project Runway релати шоуны дугаарт оролцож, зөвлөгөө өгсөн. Саяхан “ OPI Nail “ тэмцээнд улсаа төлөөлөн амжилттай оролцсон.</p>
-	<a href="" class="hero-btn">Утас</a>
-		<a href="" class="hero-btn">Instagram</a>
-		<div> <img src="e.1.png">   </div>
-		<div> <img src="e.2.png">   </div>
-		<p>Бүтээлүүд</p>
-		<div> <img src="e.3.png">   </div>
-		  <div> <img src="e.4.png">   </div>
-		  <div> <img src="e.5.png">   </div>
-</div>
-<div class="text-box">
-	<img src="бэлла.jpg">
-	<h1>Бэлла</h1>
-	<p>Nails Next Top Nail Artist season 1-р улирлын дэд аварга Билэгжаргал. Өөрийн салон, академи, бүтээгдэхүүнийхээ бренд нэр болох “Бэлла”. 2017 оны эхээр тэрээр Nail Academy-ийнхаа үүд хаалгыг нээсэн. 2019 оноос хойш манай салоны нүүр царай болон ажиллаж байна.</p>
-	<a href="" class="hero-btn">Утас</a>
-		<a href="" class="hero-btn">Instagram</a>
-		<div> <img src="b.1.png"> 
-		<img src="b.2.png">   
-		<img src="b.3.png">   
-		<img src="b.4.png">   </div>
-</div>
-
+</section>
+<!---testimonials--->
+<section class="testimonials">
+  <h1>What our student Says</h1>
+  <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+  <div class="row">
+    <div class="testimonial-col">
+      <img src="user1.jpg">
+      <div>
+        <p>
+          The modern world is supercomplex in character: it can be understood as a milieu for the proliferation of frameworks by which we might understand the world, frameworks that are often competing with each other.
+        </p>
+        <h3>Zaluu</h3>
+      </div>
+    </div>
+      <div class="testimonial-col">
+        <img src="user2.jpg">
+        <div>
+          <p>The modern world is supercomplex in character: it can be understood as a milieu for the proliferation of frameworks by which we might understand the world, frameworks that are often competing with each other.</p>
+          <h3>Busgui</h3>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="cta">
+  <h1>Welcome,anytime</h1>
+  <a href="" class="hero-btn">Contact us</a>
+</section>
 
 <section class="footer">
-	<h4>Twinklee</h4>
-	<a href="" class="hero-btn">Тухай</a>
-    <p>Хаяг</p>
-	<p>Нээлттэй цаг</p>
-	<p>MONDAY - FRIDAY  10 AM - 8 PM
-       SATURDAY,SUNDAY 10AM -6PM
-   </p>
-	<a href="" class="hero-btn">Холбоо барих</a>
-	<div>
-		<a href="" class="hero-btn">Instagram</a>
-		<a href="" class="hero-btn">Facebook</a>
-		<a href="" class="hero-btn">Mail</a>
-	</div>
+  <h4>About us</h4>
+  <p>Монгол Улсын Их Сургууль (МУИС) нь бүрэлдэхүүн 6 сургууль, орон нутаг дахь харьяаллын 2 сургууль, үндэсний статустай 3 хүрээлэн, судалгааны бусад нэгжүүдтэй, бакалавр, магистр, докторын түвшний суралцагч, эрдэмтэн багш, ажилчидтай Монгол улсын эрдэм оюуны томоохон төв юм.
+
+    МУИС нь түүхэн хөгжлийнхөө явцад одоогийн МУБИС, ХААИС, ЭМШУИС, ШУТИС, ХИС, Ховд их сургууль гэсэн 6 их сургуулийг өрх тусгаарлан шинээр байгуулж, Монгол улсад дээд боловсролын системийг бий болгон төлөвшүүлэхэд асар их хувь нэмэр оруулсан билээ.</p>
+  
 </section>
+<!-- _____________JavaScrupt____________ -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
 
 </body>
 </html>
