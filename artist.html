@@ -1,79 +1,104 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
   <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="TwinkleeNailSalon" />
-	<title>Артист</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" >
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twinklee">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Twinklee.css" />
+    <title>Twinklee Nail Salon</title>
+    <style>
+        .border {
+            width: 250px;
+            height: screen;
+            border: 1px solid black;
+        }
+        header {
+            --ungu-undsen: #FFB6C1;
+        }
+    </style>
+     <script>
+        class Artist {
+            constructor(title, content, image) {
+                this.image = image;
+                this.title = title;
+                this.content = content;
+                
+            }
+
+            render() {
+                return `<article>
+                <img src="${this.image}" />
+                    <h3 class="">${this.title}</h3>
+                    <p>${this.content}</p>
+                </article>`;
+            }
+        }
+        function App(articles, targetElement){
+            let retVal = "";
+            for (const article of articles) {
+                let articleObj = new Artist(
+                    article.image,
+                    article.title, 
+                    article.content,
+                    
+                     );
+                retVal += articleObj.render();
+            }
+              document
+              .getElementById(targetElement)
+              .insertAdjacentHTML("beforeend", retVal);
+        }
+        
+    const newsData = {
+            categories: ["Category1", "Category2", "Category3"],
+            articles: [
+                {
+                    image: "/images/artist1.jpg",
+                    title: "Артист ...",
+                    content: "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
+                },
+                 {
+                    image: "/images/artist1.jpg",
+                    title: "Артист ...",
+                    content: "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
+                },
+                 {
+                    image: "/images/artist1.jpg",
+                    title: "Артист ...",
+                    content: "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
+                },
+            ],
+        };
+        window.onload = () => App(newsData.articles, "myTarget");
+</script>
 </head>
 <body>
-	 <header class = "header-menu">
-    <h1 class="logo"> 
-    	<a href="/index.html"aria-label="index">Twinklee</a> </h1>
-      <nav class="mid-menu">
-        <ul>
-          <li><a href ="index.html">НҮҮР</a></li>
-          <li><a href ="about.html">ТУХАЙ</a></li>
-          <li><a href="service.html">ҮЙЛЧИЛГЭЭ</a></li>
-          <li><a href="artist.html">АРТИСТ</a></li>
-          <li><a href="time.html">ЦАГ АВАХ</a></li>
-        </ul>
-      </nav>
-</header>
-<section class="artist1">
-<div class="ar1">
-	<img src="images/artist3.jpg" alt="магги" width="250" height="250" />
-        <div>
-	<h1>Магги</h1>
-	<p>М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.</p>
-	
-	<i class="fa fa-phone" style="color: hotpink;"></i><a href="tel:80361336">80361336</a>
-		<a href="https://www.instagram.com/zolzya_u/" ><i class="fa fa-instagram" style="color: hotpink;" ></i> Instagram</a>
-	<div> <img src="images/m.1.png" alt="mbudalt1" width="120" height="120">  
-		  <img src="images/m.2.png" alt="mbudalt2" width="120" height="120"> 
-		  <img src="images/m.3.png" alt="mbudalt3" width="120" height="120">
-		   </div>
-</div> </div>
-</section>
-<section class="artist2">
-   <div class="">
-	<img src="images/artist2.jpg" alt="эрхэс"  width="250" height="250" />
-	<div class="hes2">
-	<h1>Эрхэс</h1>
-	<p>Nails сэтгүүлийн шилдэг 25 жагсаалтад олон удаа орсон эрэгтэй маникюрчин гэдгээрээ алдартай. 2020 онд Project Runway релати шоуны дугаарт оролцож, зөвлөгөө өгсөн. Саяхан “ OPI Nail “ тэмцээнд улсаа төлөөлөн амжилттай оролцсон.</p>
-	<i class="fa fa-phone" style="color: hotpink;"></i><a href="tel:90114019">90114019</a>
-		<a href="https://www.instagram.com/n.munkhsoyl/" ><i class="fa fa-instagram" style="color: hotpink;" ></i> Instagram</a>
-			<div> <img src="images/e.1.png" alt="ebudalt1"  width="290" height="295">   </div>
-		<div> <img src="images/e.2.png" alt="ebudalt2"  width="293" height="290">   </div>
-		<h2>Бүтээлүүд</h2>
-		<div> <img src="images/e.3.png" alt="ebudalt3" width="295" height="283">   </div>
-		  <div> <img src="images/e.4.jpg" alt="ebudalt4" width="246" height="290">   </div>
-		  <div> <img src="images/e.5.png" alt="ebudalt5" width="290" height="284">   </div>
-</div>
-</div>
-</section>
-
-<section class="artist3">
-<div class="ar3">
-	<img src="images/artist1.jpg" alt="бэлла" width="250" height="250" />
-	<div class="hese2">
-	<h1>Бэлла</h1>
-	<p>Nails Next Top Nail Artist season 1-р улирлын дэд аварга Билэгжаргал. Өөрийн салон, академи, бүтээгдэхүүнийхээ бренд нэр болох “Бэлла”. 2017 оны эхээр тэрээр Nail Academy-ийнхаа үүд хаалгыг нээсэн. 2019 оноос хойш манай салоны нүүр царай болон ажиллаж байна.</p>
-	<i class="fa fa-phone" style="color: hotpink;"></i><a href="tel:86591019">86591019</a>
-		<a href="https://www.instagram.com/_syl.m__/" ><i class="fa fa-instagram" style="color: hotpink;" ></i> Instagram</a>
-		<div> <img src="images/b.1.png" alt="bbudalt1"  width="120" height="120"> 
-		<img src="images/b.2.png" alt="bbudalt2"  width="120" height="120">   
-		<img src="images/b.3.png" alt="bbudalt3"  width="120" height="120">   
-		<img src="images/b.4.png" alt="bbudalt4" width="120" height="120" >   </div>
-</div>
-</div>
-</section>
-
-<footer class="footer">
+        <header class="header-menu">
+            <h1 class="logo">
+                <a href="index.html">Twinklee</a>
+            </h1>
+            <nav class="mid-menu">
+                <ul>
+                   <li><a href ="index.html">НҮҮР</a></li>
+                   <li><a href ="about.html">ТУХАЙ</a></li>
+                   <li><a href="service.html">ҮЙЛЧИЛГЭЭ</a></li>
+                   <li><a href="artist.html">АРТИСТ</a></li>
+                   <li><a href="time.html">ЦАГ АВАХ</a></li>
+               </ul>
+            </nav>
+        </header>
+        <main>
+      <div class="Border">
+        <section id="myTarget">
+          <h1>Ner</h1>
+        </section>
+      </div>
+    </main>
+        <footer class="footer">
   <section><h2>Тухай</h2><p>Манай салон танд үйлчлэхэд бэлэн</p><a href ="about.html">Дэлгэрэнгүй</a></section>
   <section><h3>Хаяг</h3><p> Баянзүрх дүүрэг, 14-р хороолол, Зүүн 4 замаас урагш Централ молл их дэлгүүр</p></section>
   <section><h3>Нээлттэй цаг</h3><p>Даваа - Баасан 10AM - 8PM <br> Амралтын өдөр 10AM - 6PM</p></section>
@@ -88,6 +113,8 @@
         <a href="https://twitter.com/beautysecretsmn?lang=en"aria-label="twitter"><i class="fa fa-twitter" style="color: red;"></i></a>
   </div>
 </footer>
-
 </body>
+
 </html>
+
+
