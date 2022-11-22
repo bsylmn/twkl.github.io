@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="Twinklee.css" />
     <title>Twinklee Nail Salon</title>
     <style>
+         @import "https://unpkg.com/open-props";
+
+        :root {
+            --ungu-undsen: #00f;
+            --ungu-tuslah: #777;
+            --hemjee-undsen: 0.05rem;
+            --huree-undsen: var(--hemjee-undsen) solid var(--ungu-tuslah);
+        }
+        menu {
+            display: flex;
+            flex-direction: row;
+        }
+         body {
+        display: flex;
+        justify-content: center;
+      }
         .border {
             width: 70%;
             height: screen;
@@ -19,6 +35,13 @@
         header {
             --ungu-undsen: #FFB6C1;
         }
+        article {
+            margin: var(--size-fluid-5);
+            padding: var(--size-fluid-5);
+            box-shadow: var(--shadow-2);
+            border: var(--huree-undsen);
+            border-radius: 8px;
+        }
     </style>
      <script>
         class Artist {
@@ -26,9 +49,7 @@
                 this.image = image;
                 this.title = title;
                 this.content = content;
-                
             }
-
             render() {
                 return `<article>
                 <img src="${this.image}" />
@@ -58,18 +79,18 @@
             articles: [
                 {
                     image: "/images/artist1.jpg",  
-                    "title": "Артист ...",
-                    "content": "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
+                    title: "Артист ...",
+                    content: "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
                 },
                  {
                     image: "/images/artist1.jpg",
-                    "title": "Артист ...",
-                    "content": "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
+                    title: "Артист ...",
+                    content: "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
                 },
                  {
                     image: "/images/artist1.jpg",
-                    "title": "Артист ...",
-                    "content": "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
+                    title: "Артист ...",
+                    content: "М.Марал нь 15 жилийн турш маникюр хийж байгаа бөгөөд одоогоор манай салоны артист, EzFlow-ийн бренд элчээр ажиллаж байна. 2012 онд Бейкер найл-д шилдэг 25 өрсөлдөгчийн жагсаалтын 1-р байрыг эзэлж байсан.",
                 },
             ],
         };
