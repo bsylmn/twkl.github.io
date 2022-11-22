@@ -12,18 +12,6 @@
     <title>Twinklee Nail Salon</title>
     <style>
          @import "https://unpkg.com/open-props";
-         .logo {}
-
-         a:hover {
-            color: var(--ungu-undsen);
-         }
-         a {
-            color: var(--ungu-tuslah);
-        }
-
-        h2 {
-            color: var(--ungu-undsen);
-        }
 
         :root {
             --ungu-undsen: #00f;
@@ -39,6 +27,11 @@
         display: flex;
         justify-content: center;
       }
+        .border {
+            width: 70%;
+            height: screen;
+            border: 1px solid black;
+        }
         header {
             --ungu-undsen: #FFB6C1;
         }
@@ -51,14 +44,6 @@
         }
     </style>
      <script>
-        function ChangeUndsenUngu() {
-
-            const myStyle = getComputedStyle(document.body);
-            const unguUndsen = myStyle.getPropertyValue("--ungu-undsen");
-
-            document.body.style.setProperty("--ungu-undsen", "#F9CAD7");
-        }
-        function 
         class Artist {
             constructor(image, title, content) {
                 this.image = image;
@@ -114,7 +99,8 @@
 </head>
 <body>
         <header class="header-menu">
-            <h1 class="logo">Twinklee
+            <h1 class="logo">
+                <a href="index.html">Twinklee</a>
             </h1>
             <nav class="mid-menu">
                 <ul>
@@ -127,9 +113,11 @@
             </nav>
         </header>
         <main>
+      <div class="Border">
         <section id="myTarget">
-          <h1>Artistuud</h1>
+          <h1>...</h1>
         </section>
+      </div>
     </main>
         <footer class="footer">
   <section><h2>Тухай</h2><p>Манай салон танд үйлчлэхэд бэлэн</p><a href ="about.html">Дэлгэрэнгүй</a></section>
@@ -149,5 +137,4 @@
 </body>
 
 </html>
-
 
