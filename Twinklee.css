@@ -117,3 +117,51 @@
   transition: 0.5s ease-in;
   transform: rotate(180deg);
 }
+.footer {
+  margin-top: 2%;
+  height: 16vh;
+  text-decoration: none;
+  width: 100%;
+  background: var(--foot-color);
+  display: grid;
+  grid-template-columns: 80% 20%;
+  color: var(--primary-color);
+  font-size: 0.7rem;
+  font-family: "Mulish", sans-serif !important;
+}
+/* footer */
+.footer section div {
+  width: 100%;
+  margin-left: 5%;
+}
+.footer section {
+  display: flex;
+  align-items: center;
+}
+
+.footer h3 {
+  margin-bottom: 1%;
+}
+
+.footer section div address {
+  margin-left: 3%;
+}
+
+.footer section address a {
+  color: var(--primary-color);
+}
+.footer section i {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  margin-right: 1.5%;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .social i {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 0.5rem;
+}
