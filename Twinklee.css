@@ -1,3 +1,25 @@
+/*nuur*/
+:root {
+  background: #eeeded;
+  --primary-color: white;
+  --secondary-color: black;
+  --head-color: #F9CAD7;
+  --foot-color: #F9CAD7;
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  --brand-color: #F9CAD7;
+  --eng-font: "Lobster";
+  --mongolia-font: "Lobster", sans-serif !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+/* header */
 .header-menu {
   text-decoration: none;
   position: fixed;
