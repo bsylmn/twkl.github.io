@@ -41,6 +41,12 @@
   grid-template-columns: 30% 50% 20%;
   height: 10vh;
   text-align: center;
+  /* Grid-eer 3-n hesegt huvaah */
+  grid-template-columns: 25% 55% 20%;
+
+  /* Menunii undur delgetsiin 10% */
+  height: 10vh;
+  text-align: center;
 }
 .logo {
   margin-top: -0.8rem;
