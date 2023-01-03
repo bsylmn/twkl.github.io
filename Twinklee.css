@@ -1,3 +1,4 @@
+
 .art1 {
   min-height: 871px;
   background-image: linear-gradient(rgba(235,150,170,0.51), #e68387);
@@ -7,6 +8,23 @@
   height: 628px;
   margin: 43px 0 0 auto;
 }
+
+.art1 .name-1 {
+  font-weight: 700;
+  margin: 81px auto 0 30px;
+  font-family: Lobster; 
+}
+.art1 .text-1 {
+  letter-spacing: 0px;
+  line-height: 2;
+  font-size: 1.25rem;
+  margin: 18px 30px 0;
+
+}
+
+
+
+
 
 /*nuur*/
 :root {
@@ -40,6 +58,7 @@
   display: grid;
   grid-template-columns: 30% 50% 20%;
   height: 10vh;
+  font-family: Lobster;
   text-align: center;
   /* Grid-eer 3-n hesegt huvaah */
   grid-template-columns: 25% 55% 20%;
@@ -52,15 +71,16 @@
   margin-top: -0.8rem;
   grid-column-start: 1;
   font-size: 2.2rem;
-  font-family: var(--eng-font);
+  font-family: Lobster; 
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .logo a {
   flex-direction: row;
   color: var(--secondary-color);
-  color: #C54B6C;
+  color: #FE4465;
 }
 
 .header-menu .mid-menu {
@@ -77,7 +97,7 @@
 }
 .header-menu .mid-menu a {
   font-size: 0.9rem;
-  color: var(--secondary-color);
+  color: #FE4465;
 }
 .header-menu .mid-menu a:hover {
   font-size: 1rem;
